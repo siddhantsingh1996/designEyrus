@@ -1,0 +1,3 @@
+export const SELECTED_MENU = "SELECTED_MENU";
+export const SIDEBAR_ICON  = "SIDEBAR_MENU";
+export const MENU_CLICKED="MENU_CLICKED";
