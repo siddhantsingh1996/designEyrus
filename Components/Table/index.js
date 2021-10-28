@@ -19,7 +19,7 @@ export default function Table() {
         <div className="row-add">
           <div className="outlined-square">
             <div className="outline-border">
-              <img className="add-icon" src="./addition.png" alt="" />
+              <img className="add-icon" src="./plus.svg" alt="" />
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Table() {
                   left: "2%",
                   top: "17%",
                 }}
-                src="./addition.png"
+                src="./plus.svg"
                 alt=""
               />
             </div>
@@ -79,7 +79,7 @@ export default function Table() {
                   left: "2%",
                   top: "24%",
                 }}
-                src="./addition.png"
+                src="./plus.svg"
                 alt=""
               />
             </div>
@@ -99,24 +99,4 @@ export default function Table() {
       </div>
     </div>
   );
-}
-
-{
-  /*<div className="table-container">
-           
-                <div className="header-column">
-                    <p>CSI div</p>
-                    <p>Company</p>
-                    <p>People on-site today</p>
-                </div>
-                <div className="table-row">
-                  
-                    <div className="first-row">
-                        <div className="add">+</div>
-                        div 26
-                    </div>
-                    <div>Duumy data</div>
-                    <div>dummy date</div>
-               </div>
-    </div>*/
 }

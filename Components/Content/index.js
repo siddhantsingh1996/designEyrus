@@ -3,10 +3,10 @@ import Filter from "../Filter";
 import Table from "../Table";
 import ContentHeader from "./contentHeader";
 import { connect } from "react-redux";
-import EmailContent from "./emailContent";
+
 function Content(props) {
   const { menu } = props;
-  console.log("menu", menu);
+
   return (
     <>
       {menu === "Reporting" ? (
