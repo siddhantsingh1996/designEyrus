@@ -13,11 +13,7 @@ export default function Reporting() {
       <div className="frame-one">
         <div className="sidebar-components">
           <div className="img-box">
-            <img
-              className="img-icon-progress"
-              src="./graph.svg"
-              alt=""
-            />
+            <img className="img-icon-progress" src="./graph.svg" alt="" />
           </div>
           <div className="sidebar-labels">Progress</div>
         </div>
@@ -50,30 +46,6 @@ export default function Reporting() {
           <div className="sidebar-labels">Access</div>
         </div>
       </div>
-      {/*<div className="sidebar-components">
-        <img className="img-icon" src="./grow.png" alt=""/>
-        <p>Progress</p>
-      </div>
-      <div className="sidebar-components">
-      <img className="img-icon" src="./shield.png" alt=""/>
-        <p>Safety</p>
-        </div>
-      <div className="sidebar-components">
-      <img className="img-icon" src="./overwork.png" alt=""/>
-       <p> Workforce</p>
-       
-        </div>
-      <div  className="sidebar-components">
-      <img className="img-icon" src="./hardware.png" alt=""/>
-        <p>Hardware</p>
-       
-        </div>
-      <div className="sidebar-components">
-      <img  className="img-icon"src="./key.png" alt=""/>
-       <p> Access</p>
-      
-    </div>*/}
-
       <div className="add-category">Add Category</div>
     </>
   );

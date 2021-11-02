@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 
 import { connect } from "react-redux";
+import { IMenuState } from "../../Typings/menuState";
 import { selectedMenu, clickedMenu } from "../../Redux/Actions/main";
 function Navbar(props) {
-  const [onmenu, setOnMenu] = useState(false);
+  const [onmenu, setOnMenu] = useState<IMenuState>({ menuClicked: false });
   const { menu, selectedMenu, clickedMenu, menuClicked } = props;
+  console.log("onmenu", onmenu);
   return (
     <div className="nav-container">
       <div className="notification-info">
@@ -21,22 +23,26 @@ function Navbar(props) {
           </div>
         </div>
         <div
-          className={onmenu ? "menu menu-clicked" : "menu"}
+          className={onmenu.menuClicked ? "menu menu-clicked" : "menu"}
           onClick={() => {
-            if (!onmenu) setOnMenu(true);
+            if (!onmenu.menuClicked) setOnMenu({ menuClicked: true });
             else {
-              setOnMenu(false);
+              setOnMenu({ menuClicked: false });
             }
           }}
         >
           <img
-            className={onmenu ? "menu-img-clicked" : "menu-img"}
+            className={onmenu.menuClicked ? "menu-img-clicked" : "menu-img"}
             src="/menubtn.svg"
             alt=""
           />
-          <div className={onmenu ? "menu-text-clicked" : "menu-text"}>Menu</div>
+          <div
+            className={onmenu.menuClicked ? "menu-text-clicked" : "menu-text"}
+          >
+            Menu
+          </div>
         </div>
-        {onmenu ? (
+        {onmenu.menuClicked ? (
           <div className="dropdown-content">
             <div className="content-box">
               <div className="content-lables">

@@ -1,6 +1,13 @@
 import * as t from "../Types";
 
-const InitialState = {
+
+interface State {
+  menu: String,
+  minimized:boolean,
+  menuClicked:boolean
+}
+
+const InitialState:State = {
   menu: "Project",
   minimized: false,
   menuClicked: false,
@@ -16,7 +23,7 @@ const main = (state = InitialState, action) => {
     case t.SELECTED_MENU:
       return {
         ...state,
-        menuClicked: !menuClicked ? true : false,
+        menuClicked: !state.menuClicked ? true : false,
       };
 
     default:

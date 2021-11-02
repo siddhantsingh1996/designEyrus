@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { wrapper } from "../redux/Store";
+import { wrapper}  from "../redux/Store";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
